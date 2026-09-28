@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIR — Modern Clothing Brand</title>
+
+```
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+```
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">NOIR<span>.</span></div>
+
+```
+<nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+</nav>
+
+<button class="cart-btn" onclick="openCart()">
+    Cart <span id="cartCount">0</span>
+</button>
+```
+
+</header>
+
+<main>
+
+```
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">NEW COLLECTION 2026</p>
+
+        <h1>
+            WEAR YOUR
+            <span>IDENTITY.</span>
+        </h1>
+
+        <p class="hero-text">
+            Premium streetwear designed for people
+            who don't follow the crowd.
+        </p>
+
+        <a href="#shop" class="hero-btn">
+            SHOP COLLECTION
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-card">
+            <span>01</span>
+            <p>NEW<br>SEASON</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div>
+        <strong>01</strong>
+        <h3>Premium Quality</h3>
+        <p>High quality materials.</p>
+    </div>
+
+    <div>
+        <strong>02</strong>
+        <h3>Modern Design</h3>
+        <p>Designed for the new generation.</p>
+    </div>
+
+    <div>
+        <strong>03</strong>
+        <h3>Fast Delivery</h3>
+        <p>Worldwide shipping available.</p>
+    </div>
+
+</section>
+
+
+<!-- SHOP -->
+
+<section class="shop" id="shop">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="small-title">OUR PRODUCTS</p>
+            <h2>THE COLLECTION</h2>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterProducts('all')">All</button>
+            <button onclick="filterProducts('hoodie')">Hoodies</button>
+            <button onclick="filterProducts('tshirt')">T-Shirts</button>
+            <button onclick="filterProducts('pants')">Pants</button>
+        </div>
+
+    </div>
+
+
+    <div class="products" id="products">
+
+        <div class="product" data-category="hoodie">
+
+            <div class="product-image">
+                <div class="product-label">NEW</div>
+                <div class="fake-shirt black">NOIR</div>
+            </div>
+
+            <div class="product-info">
+                <h3>Essential Black Hoodie</h3>
+                <p>Premium Cotton</p>
+
+                <div class="product-bottom">
+                    <strong>$79</strong>
+
+                    <button onclick="addToCart('Essential Black Hoodie', 79)">
+                        +
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="product" data-category="tshirt">
+
+            <div class="product-image">
+                <div class="fake-shirt white">NOIR</div>
+            </div>
+
+            <div class="product-info">
+                <h3>Classic White T-Shirt</h3>
+                <p>Heavyweight Cotton</p>
+
+                <div class="product-bottom">
+                    <strong>$39</strong>
+
+                    <button onclick="addToCart('Classic White T-Shirt', 39)">
+                        +
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="product" data-category="pants">
+
+            <div class="product-image">
+                <div class="fake-pants">NOIR</div>
+            </div>
+
+            <div class="product-info">
+                <h3>Relaxed Cargo Pants</h3>
+                <p>Premium Fabric</p>
+
+                <div class="product-bottom">
+                    <strong>$69</strong>
+
+                    <button onclick="addToCart('Relaxed Cargo Pants', 69)">
+                        +
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="product" data-category="hoodie">
+
+            <div class="product-image">
+                <div class="product-label">LIMITED</div>
+                <div class="fake-shirt gray">NOIR</div>
+            </div>
+
+            <div class="product-info">
+                <h3>Oversized Grey Hoodie</h3>
+                <p>Heavyweight Cotton</p>
+
+                <div class="product-bottom">
+                    <strong>$89</strong>
+
+                    <button onclick="addToCart('Oversized Grey Hoodie', 89)">
+                        +
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COLLECTION -->
+
+<section class="collection" id="collections">
+
+    <div>
+        <p class="small-title">NOIR 2026</p>
+
+        <h2>
+            BUILT FOR
+            <span>THE BOLD.</span>
+        </h2>
+
+        <p>
+            A collection inspired by architecture,
+            music and modern street culture.
+        </p>
+
+        <a href="#shop" class="outline-btn">
+            EXPLORE COLLECTION
+        </a>
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <p class="small-title">OUR STORY</p>
+
+    <h2>MORE THAN CLOTHES.</h2>
+
+    <p>
+        NOIR is an independent clothing brand focused on
+        creating timeless pieces with a modern streetwear
+        attitude.
+    </p>
+
+</section>
+```
+
+</main>
+
+<!-- CART -->
+
+<div class="cart-overlay" id="cartOverlay">
+
+```
+<div class="cart">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button onclick="closeCart()">×</button>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+        <span>Total</span>
+        <strong>$<span id="cartTotal">0</span></strong>
+    </div>
+
+    <button class="checkout" onclick="checkout()">
+        CHECKOUT
+    </button>
+
+</div>
+```
+
+</div>
+
+<footer>
+
+```
+<div class="logo">NOIR<span>.</span></div>
+
+<p>© 2026 NOIR. All rights reserved.</p>
+```
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
